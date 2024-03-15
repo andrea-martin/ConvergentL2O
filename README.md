@@ -8,9 +8,9 @@ Learning to optimize a shallow neural network for image classification with the 
 
 
 <p align="center">
-<img src="./figures/tanh_normal.pdf" width="300"/>
-<img src="./figures/sigmoid_normal.pdf" width="300"/>
-  <img src="./figures/relu_normal.pdf" width="300"/>
+<img src="./figures/tanh_normal.pdf" width="250"/>
+<img src="./figures/sigmoid_normal.pdf" width="250"/>
+  <img src="./figures/relu_normal.pdf" width="250"/>
 </p> 
 
 
