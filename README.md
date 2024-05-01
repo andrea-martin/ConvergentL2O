@@ -6,14 +6,18 @@ PyTorch implementation of the code to reproduce the numerical experiments includ
 Learning to optimize a shallow neural network for image classification with the MNIST dataset. The figures below compare the performance of our learnt optimizer with standard neural network training algorithms (Adam, NAG, RMSprop, SGD), whose hyperparameters are tuned through gridding.
 
 
-
 <p align="center">
-<img src="./figures/tanh_normal.png" width="250"/>
-<img src="./figures/sigmoid_normal.png" width="250"/>
-  <img src="./figures/relu_normal.png" width="250"/>
+<img src="./figures/tanh_normal_zoomed.png" width="250"/>
+<img src="./figures/sigmoid_normal_zoomed.png" width="250"/>
+  <img src="./figures/relu_normal_zoomed.png" width="250"/>
 </p> 
 
+On the value of convergence: the figure belows compare the average norm of the updates produced by a learned LSTM optimizer and our ConvergentL2O method. Note that the LSTM updates do not vanish over time, causing the parameters of the image classifier to diverge.
 
+
+<p align="center">
+<img src="./figures/comparison.png" width="750"/>
+</p> 
 
 ## License
 This work is licensed under a
