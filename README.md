@@ -12,8 +12,14 @@ Learning to optimize a shallow neural network for image classification with the 
   <img src="./figures/relu_normal_zoomed.png" width="250"/>
 </p> 
 
-The figure below compares the average norm of the updates produced by a learned LSTM optimizer and our ConvergentL2O method. Note that the LSTM updates do not vanish over time, causing the parameters of the image classifier to diverge.
+The table below compares the average test accuracy achieved by standard optimizers, a learned LSTM optimizer, and our Convergent L20 method after $t=20$ and $t=300$ optimization steps, respectively.
 
+<p align="center">
+<img src="./figures/test_accuracy_20.png" width="350"/>
+  <img src="./figures/test_accuracy_300.png" width="350"/>
+</p> 
+
+While the performance of the learned LSTM optimizer and our ConvergentL2O method are comparable, by observing the average norm of the updates, we observe that the LSTM updates do not vanish over time, causing the parameters of the image classifier to diverge.
 
 <p align="center">
 <img src="./figures/comparison.png" width="750"/>
